@@ -5,30 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./styles/standard.css">
-    <link rel="stylesheet" href="./styles/basket.css">
-    <link rel="stylesheet" href="./styles/assets.css">
-    <link rel="stylesheet" href="./styles/mobile.css">
     <link rel="stylesheet" href="./styles/fonts.css">
-    <link rel="icon" href="./assets/icons/xxx" type="image/png">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/basket.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/png">
 
     <title>Bestell App</title>
 </head>
 <body>
     <header>
-
-
+        <div class="logo_container">
+            <a href="/">
+                <img class="logo" src="./assets/icons/bestell-app-logo-copper.svg" alt="Bestell App Logo">
+            </a>
+            <img class="basket_icon" src="./assets/icons/basket-copper.png" alt="Warenkorb">
+        </div>
     </header>
+
     <main>
-        <section id="mainContent"></section>
-        <section id="basket"></section>
+        <div class="content_wrapper">
+            <section class="content_restaurant">
+                <div class="content_restaurant_head">
+                    <img class="head_img" src="./assets/img/head-7249294.jpg" alt="Gerichte">
+                </div>
+                <div class="content_restaurant_titlebox">
+                    <h1>Umami Garden</h1>
+                    <h2>Gourmet Fusion Kitchen</h2>
+                    <div>
+                        <p>Bewertung (4,8 von 5 Sternen)</p>
+                    </div>
+                </div>
+                <nav class="nav" aria-label="Hauptnavigation">
+                    <ul>
+                        <li><a href="#starters"><b>Mini Gerichte</b></a></li>
+                        <li><a href="#mains"><b>Power Gerichte</b></a></li>
+                        <li><a href="#desserts"><b>Süße Kreationen</b></a></li>
+                    </ul>
+                </nav>
+                <div id="dishesContent">
+                    <h2 id="starters">Mini Gerichte</h2>
+                    <div class="dishes_card_content" id="dishesCardContent"></div>
+                    <div class="dishes_card_content" id="dishesCardContent"></div>
+                    <div class="dishes_card_content" id="dishesCardContent"></div>
+                    <hr>
+                    <h2 id="mains">Power Gerichte</h2>
+                    <div class="dishes_card_content" id="dishesCardContent"></div>
+                    <div class="dishes_card_content" id="dishesCardContent"></div>
+                    <div class="dishes_card_content" id="dishesCardContent"></div>
+                    <hr>
+                    <h2 id="desserts">Süße Kreationen</h2>
+                    <div class="dishes_card_content" id="dishesCardContent"></div>
+                    <div class="dishes_card_content" id="dishesCardContent"></div>
+                    <div class="dishes_card_content" id="dishesCardContent"></div>
+                    <div class="space_area"></div>
+                </div>  
+            </section>
+            
+            <section class="basket_wrapper">
+                <div class="basket_content" id="basket">
+                </div>
+            </section>
+        </div>
     </main>
+
     <footer>
-        <div>© 2025 Bestell App</div>
+            <div class="footer">© 2025 Bestell App</div>
     </footer>
 
     <script src="./scripts/data.js"></script>
-    <script src="./scripts/template.js"></script>
+    <script src="./scripts/templates.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

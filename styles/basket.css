@@ -1,0 +1,14 @@
+.basket_wrapper {
+    position: relative;
+    width: 300px;
+    flex-grow: 1;
+}
+
+.basket_content {
+    /* background-color: #2a5b59; */
+    background-color: #cdd6d6;
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
