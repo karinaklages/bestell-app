@@ -3,13 +3,13 @@ main, html {
 }
 
 main {
-    max-width: 1220px;
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
 }
 
 body {
-    background-color: #e7e9ec;
+    background-color: #f0f3f5;
     font-family: 'Outfit';
 }
 
@@ -48,7 +48,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1220px;
+    max-width: 1260px;
     height: 85px;
     margin-left: auto;
     margin-right: auto;
@@ -70,11 +70,16 @@ a:hover {
     flex-grow: 1;
 }
 
+.content_restaurant_titlebox, nav, #dishesContent {
+    padding-left: 30px;
+}
+
 .content_restaurant {
     width: calc(100% - 300px);
-    max-width: 1220px;
+    max-width: 1260px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1), 5px 0 15px rgba(0, 0, 0, 0.1)
 }
 
 .head_img {
@@ -91,11 +96,26 @@ nav {
     margin-top: 40px;
     margin-bottom: 60px;
     margin-right: 30px;
-    border-top: #dadcdf solid 2px;
-    border-bottom: #dadcdf solid 2px;
+    /* border-bottom: #dadcdf solid 2px; */
     display: flex; 
     align-items: center;
+    position: relative;
 }
+
+nav::before,
+nav::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  right: 0;
+  height: 2px;
+  background-color: #dadcdf;
+  pointer-events: none;
+}
+
+nav::before { top: 0; }
+
+nav::after { bottom: 0; }
 
 .nav ul {
   list-style: none;
@@ -119,10 +139,10 @@ hr {
 
 .dishes_card_content {
     height: 140px;
-    background-color: #ffffffa9;
+    background-color: #ffffff;
     margin-top: 30px;
     margin-right: 30px;
-    border-radius: 14px;
+    /* border-radius: 14px; */
 }
 
 .space_area {
