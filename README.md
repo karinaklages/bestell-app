@@ -8,5 +8,5 @@
 This project forms part of the Developer Akademie's training programme for software developers (www.developerakademie.com). While I adapted the design to my ideas, other programming specifications from the project had to be fulfilled.<br><br>
 
 The logo used is from the Developer Akademie. All other images are from www.pixabay.com.<br>
-Photographers: Joanna Wielgosz / Blandine Joannic / Firas Hassoun
+Photographers: Joanna Wielgosz / Jean-Louis Servais / Blandine Joannic / Firas Hassoun
 </p><br>
