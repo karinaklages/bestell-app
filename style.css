@@ -82,15 +82,13 @@ a:hover {
 .content_wrapper {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
 }
 
 .content_restaurant {
-    width: calc(100% - 300px);
-    max-width: 1260px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1), 5px 0 15px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
 }
 
 .content_restaurant_head {

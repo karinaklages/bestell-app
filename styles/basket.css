@@ -1,8 +1,6 @@
 .basket_wrapper {
     position: relative;
     width: 300px;
-    display: flex;
-    flex-grow: 1;
 }
 
 .basket_content {
