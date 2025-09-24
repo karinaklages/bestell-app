@@ -93,12 +93,30 @@ a:hover {
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1), 5px 0 15px rgba(0, 0, 0, 0.1);
 }
 
+.content_restaurant_head {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .head_img {
     height: 280px;
     width: 100%;
     object-fit: cover;
-    object-position: center;
     display: block;
+}
+
+.round_img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 120px;
+    width: 120px;
+    border: 2px solid #b77b62;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    bottom: -56px;
+    transform: translateX(-50%);
 }
 
 .content_restaurant_titlebox, nav, #dishesContent {
