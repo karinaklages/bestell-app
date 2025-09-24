@@ -138,13 +138,6 @@ nav::after { bottom: 0; }
   color: inherit;
 }
 
-hr {
-    border: none;
-    border-top: 2px solid #dadcdf;
-    margin: 2rem 0; 
-    margin-right: 30px;
-}
-
 .dishes_card_content {
     position: relative;
     display: flex;
@@ -160,21 +153,6 @@ hr {
   height: 140px;
   object-fit: cover;
   margin-right: 30px;
-}
-
-.add-icon {
-    position: absolute;
-    top: -7px;
-    right: -7px;
-    height: 42px;
-    width: 42px;
-    cursor: pointer; 
-}
-
-.space_area {
-    height: 60px;
-    width: 100%;
-    background-color: transparent;
 }
 
 footer {

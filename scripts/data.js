@@ -5,25 +5,29 @@ let dishes = {
                 "title": "Panierter Tofu",
                 "description": "Tofu in Nusspanade mit Koriander",
                 "price": 9.00,
-                "img": "./assets/img/tofu-7249281.jpg"
+                "img": "./assets/img/tofu-7249281.jpg",
+                "alt": "Panierter Tofu in einer Schale"
             },
             {
                 "title": "Goldener Tofu in Erdnuss-Sauce",
                 "description": "Gebratener Tofu mit Erdnuss-Sauce und frischen Kräutern",
                 "price": 10.00,
-                "img": "./assets/img/tofu-7249284.jpg"
+                "img": "./assets/img/tofu-7249284.jpg",
+                "alt": "Tofu mit Erdnuss-Sauce"
             },
             {
                 "title": "Yuzu Udon Soup",
                 "description": "Udon-Nudeln in zitroniger Yuzu-Brühe mit Zuckerschoten und schwarzem Sesam",
                 "price": 12.00,
-                "img": "./assets/img/noodles-7187804.jpg"
+                "img": "./assets/img/noodles-7187804.jpg",
+                "alt": "Udon Soup auf einem Tisch serviert"
             },
             {
                 "title": "Spicy Udon Soup",
                 "description": "Udon-Nudeln mit Zuckerschoten, Teriyaki-Chili-Brühe, Seitan und schwarzem Sesam",
                 "price": 12.00,
-                "img": "./assets/img/noodles-7249233.jpg"
+                "img": "./assets/img/noodles-7249233.jpg",
+                "alt": "Udon Soup auf einem Tisch serviert"
             }
         ],
         "Power Gerichte": [
@@ -31,31 +35,36 @@ let dishes = {
                 "title": "Tokyo-Style Mie Nudeln",
                 "description": "Nudeln mit Tofu, Frühlingszwiebeln, Koriander und Limetten-Dressing",
                 "price": 18.00,
-                "img": "./assets/img/noodles-7249258.jpg"
+                "img": "./assets/img/noodles-7249258.jpg",
+                "alt": "Mie Nudeln in einer Schüssel serviert"
             },
             {
                 "title": "Creamy Mie Nudeln",
                 "description": "Mie Nudeln mit Hühnchenfilet, Paprika, Erdnüssen, Koriander in cremiger Sauce",
                 "price": 18.00,
-                "img": "./assets/img/noodles-7249226.jpg"
+                "img": "./assets/img/noodles-7249226.jpg",
+                "alt": "Mie Nudeln in einer Schüssel serviert"
             },
             {
                 "title": "Tofu Power Bowl",
                 "description": "Frittierter Tofu in Erdnuss-Sauce mit Blumenkohl und Koriander",
                 "price": 18.00,
-                "img": "./assets/img/tofu-7249309.jpg"
+                "img": "./assets/img/tofu-7249309.jpg",
+                "alt": "Tofu-Gericht in einer Schüssel serviert"
             },
             {
                 "title": "Korean Bowl mit Tofu",
                 "description": "Frittierter Tofu mit Basmatireis, Gemüse der Saison und Koriander",
                 "price": 18.00,
-                "img": "./assets/img/tofu-7249271.jpg"
+                "img": "./assets/img/tofu-7249271.jpg",
+                "alt": "Tofu-Gericht in einer Schüssel serviert"
             },
             {
                 "title": "Golden Curry Bowl",
                 "description": "Blumenkohl-Curry mit Basmatireis, Süßkartoffeln, Tofu, Kokosmilch und Koriander",
                 "price": 18.00,
-                "img": "./assets/img/curry-7249247.jpg"
+                "img": "./assets/img/curry-7249247.jpg",
+                "alt": "Curry-Gericht mit Blumenkohl in einer Schüssel"
             }
         ],
         "Süße Kreationen": [
@@ -63,19 +72,22 @@ let dishes = {
                 "title": "Pistazien-Würfel",
                 "description": "Zitroniges Kuchengebäck mit Pistazien",
                 "price": 7.00,
-                "img": "./assets/img/cake-5158702.jpg"
+                "img": "./assets/img/cake-5158702.jpg",
+                "alt": "Kuchenwürfel auf einem Teller serviert"
             },
             {
                 "title": "Tarte",
                 "description": "Kleine Tarte mit saisonalen Früchten",
                 "price": 7.00,
-                "img": "./assets/img/tarte-4935189.jpg"
+                "img": "./assets/img/tarte-4935189.jpg",
+                "alt": "Karamellisierte Obstschicht"
             },
             {
                 "title": "Salty Brownie",
                 "description": "Brownie mit salziger Note und Walnüssen",
                 "price": 7.00,
-                "img": "./assets/img/brownie-9553861.jpg"
+                "img": "./assets/img/brownie-9553861.jpg",
+                "alt": "Blech mit Brownies"
             }
         ]
     }

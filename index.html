@@ -18,9 +18,9 @@
     <header>
         <div class="logo_container">
             <a href="/">
-                <img class="logo" src="./assets/icons/bestell-app-logo-copper.svg" alt="Bestell App Logo">
+                <img class="logo" src="./assets/icons/bestell-app-logo-copper.svg" alt="Bestell App Logo" aria-label="Zur Startseite">
             </a>
-            <img class="basket_icon" id="basketIcon" src="./assets/icons/basket-copper.png" alt="Warenkorb" onclick="toggleDNone()">
+            <img class="basket_icon" id="basketIcon" src="./assets/icons/basket-copper.png" alt="Warenkorb" onclick="toggleDNone()" aria-label="Warenkorb öffnen und schließen">
         </div>
     </header>
 
@@ -37,7 +37,7 @@
                         <p>Bewertung (4,8 von 5 Sternen)</p>
                     </div>
                 </div>
-                <nav class="nav" aria-label="Hauptnavigation">
+                <nav class="nav">
                     <ul>
                         <li><a href="#starters"><b>Mini Gerichte</b></a></li>
                         <li><a href="#mains"><b>Power Gerichte</b></a></li>
@@ -46,23 +46,23 @@
                 </nav>
                 <div id="dishesContent">
                     <h2 id="starters">Mini Gerichte</h2>
-                    <div class="dishes_card_content" id="dishesCardContent">
-                        <img class="card_content_img" src="./assets/img/tofu-7249281.jpg" alt="Tofu">
+                    <div class="dishes_card_content" id="dishesCardContent" tabindex="0">
+                        <img class="card_content_img" src="./assets/img/tofu-7249281.jpg" alt={img.alt}>
                         <div>
                             <h3>Panierter Tofu</h3>
                             <p>Tofu in Nusspanade mit Koriander</p><br>
                             <p><b>9.00</b></p>
                         </div>
-                        <img class="add-icon" src="./assets/icons/add-icon.png" alt="Hinzufügen-Button">
+                        <img class="add-icon" src="./assets/icons/add-icon.png" alt="Hinzufügen-Button" aria-label="Gericht zum Warenbork hinzufügen">
                     </div>
                     <div class="dishes_card_content" id="dishesCardContent"></div>
                     <div class="dishes_card_content" id="dishesCardContent"></div>
-                    <hr>
+                    <hr class="hr_main_content">
                     <h2 id="mains">Power Gerichte</h2>
                     <div class="dishes_card_content" id="dishesCardContent"></div>
                     <div class="dishes_card_content" id="dishesCardContent"></div>
                     <div class="dishes_card_content" id="dishesCardContent"></div>
-                    <hr>
+                    <hr class="hr_main_content">
                     <h2 id="desserts">Süße Kreationen</h2>
                     <div class="dishes_card_content" id="dishesCardContent"></div>
                     <div class="dishes_card_content" id="dishesCardContent"></div>
@@ -73,6 +73,11 @@
             
             <section class="basket_wrapper">
                 <div class="basket_content" id="basket">
+                    <h2>Warenkorb</h2>
+                    <div class="space_area"></div>
+                    <hr class="hr_basket_content">
+                    <div class="space_area"></div>
+                    <button class="bestell_button_warenkorb" >Bestellung absenden</button>
                 </div>
             </section>
         </div>

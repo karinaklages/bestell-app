@@ -1,0 +1,38 @@
+.space_area {
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.hr_main_content {
+    border: none;
+    border-top: 2px solid #dadcdf;
+    margin: 2rem 0; 
+    margin-right: 30px;
+}
+
+.hr_basket_content {
+    border: none;
+    border-top: 2px solid #ffffff1a;
+    margin: 2rem 0;
+}
+
+.add-icon {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    height: 42px;
+    width: 42px;
+    cursor: pointer; 
+}
+
+.bestell_button_warenkorb {
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: #b77b62;
+    color: white;
+    font-family: 'Outfit';
+    font-size: 16px;
+    cursor: pointer;
+}
