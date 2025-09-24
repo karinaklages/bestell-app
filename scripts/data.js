@@ -8,14 +8,14 @@ let dishes = {
                 "img": "./assets/img/tofu-7249281.jpg"
             },
             {
-                "title": "Tofu in Erdnuss-Sauce",
+                "title": "Goldener Tofu in Erdnuss-Sauce",
                 "description": "Gebratener Tofu mit Erdnuss-Sauce und frischen Kräutern",
                 "price": 10.00,
                 "img": "./assets/img/tofu-7249284.jpg"
             },
             {
-                "title": "Udon Soup",
-                "description": "Udon-Nudeln mit Zuckerschoten, Gochujang-Brühe, Frühlingszwiebeln und schwarzem Sesam",
+                "title": "Yuzu Udon Soup",
+                "description": "Udon-Nudeln in zitroniger Yuzu-Brühe mit Zuckerschoten und schwarzem Sesam",
                 "price": 12.00,
                 "img": "./assets/img/noodles-7187804.jpg"
             },
@@ -28,25 +28,25 @@ let dishes = {
         ],
         "Power Gerichte": [
             {
-                "title": "Nudeln mit Tofu",
+                "title": "Tokyo-Style Mie Nudeln",
                 "description": "Nudeln mit Tofu, Frühlingszwiebeln, Koriander und Limetten-Dressing",
                 "price": 18.00,
                 "img": "./assets/img/noodles-7249258.jpg"
             },
             {
-                "title": "Nudeln mit Hühnchen",
-                "description": "Nudeln mit Hühnchenfilet, Paprika, Erdnüssen, Koriander und cremiger Sauce",
+                "title": "Creamy Mie Nudeln",
+                "description": "Mie Nudeln mit Hühnchenfilet, Paprika, Erdnüssen, Koriander in cremiger Sauce",
                 "price": 18.00,
                 "img": "./assets/img/noodles-7249226.jpg"
             },
             {
-                "title": "Frittierter Tofu in Erdnuss-Sauce",
+                "title": "Tofu Power Bowl",
                 "description": "Frittierter Tofu in Erdnuss-Sauce mit Blumenkohl und Koriander",
                 "price": 18.00,
                 "img": "./assets/img/tofu-7249309.jpg"
             },
             {
-                "title": "Frittierter Tofu",
+                "title": "Korean Bowl mit Tofu",
                 "description": "Frittierter Tofu mit Basmatireis, Gemüse der Saison und Koriander",
                 "price": 18.00,
                 "img": "./assets/img/tofu-7249271.jpg"
@@ -58,22 +58,22 @@ let dishes = {
                 "img": "./assets/img/curry-7249247.jpg"
             }
         ],
-        "Dessert Kreationen": [
+        "Süße Kreationen": [
             {
                 "title": "Pistazien-Würfel",
-                "description": "Süßes Kuchengebäck mit Zitrone und Pistazien",
+                "description": "Zitroniges Kuchengebäck mit Pistazien",
                 "price": 7.00,
                 "img": "./assets/img/cake-5158702.jpg"
             },
             {
                 "title": "Tarte",
-                "description": "Kleine Tarte mit Früchten der Saison",
+                "description": "Kleine Tarte mit saisonalen Früchten",
                 "price": 7.00,
                 "img": "./assets/img/tarte-4935189.jpg"
             },
             {
-                "title": "Spicy Brownie",
-                "description": "Brownie mit Chili und Walnüssen",
+                "title": "Salty Brownie",
+                "description": "Brownie mit salziger Note und Walnüssen",
                 "price": 7.00,
                 "img": "./assets/img/brownie-9553861.jpg"
             }
