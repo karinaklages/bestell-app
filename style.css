@@ -41,6 +41,13 @@ h3 {
     padding-bottom: 6px;
 }
 
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-bottom: 6px;
+}
+
 p, li, a {
     font-size: 16px;
     color: #113e3c;

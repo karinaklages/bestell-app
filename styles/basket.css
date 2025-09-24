@@ -14,3 +14,32 @@
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
 }
+
+.product_info_aligned {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_info_aligned_child {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.product_info p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.price_text span {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.price_text_child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

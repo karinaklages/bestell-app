@@ -67,17 +67,47 @@
                     <div class="dishes_card_content" id="dishesCardContent"></div>
                     <div class="dishes_card_content" id="dishesCardContent"></div>
                     <div class="dishes_card_content" id="dishesCardContent"></div>
-                    <div class="space_area"></div>
+                    <div class="space_area_height"></div>
                 </div>  
             </section>
             
             <section class="basket_wrapper">
                 <div class="basket_content" id="basket">
                     <h2>Warenkorb</h2>
-                    <div class="space_area"></div>
-                    <hr class="hr_basket_content">
-                    <div class="space_area"></div>
-                    <button class="bestell_button_warenkorb" >Bestellung absenden</button>
+                    <div class="space_area_height_small"></div>
+
+                    <div class="product_info" id="productInfoBasket">
+                        <h4>Panierter Tofu</h4>
+                        <div class="product_info_aligned">
+                            <div class="product_info_aligned_child">
+                                <img class="white_aligned_icons" src="./assets/icons/minus-icon.png" alt="Minus Icon" aria-label="Produkt subtrahieren">
+                                <p>1x</p>
+                                <img class="white_aligned_icons" src="./assets/icons/plus-icon.png" alt="Plus Icon" aria-label="Produkt addieren">
+                            </div>
+                            <div class="product_info_aligned_child">
+                                <p align="right">9,00 &euro;</p>
+                                <img class="white_aligned_icons" src="./assets/icons/close-icon.png" alt="Close Icon" aria-label="Produkt löschen">
+                            </div>
+                        </div>
+                        <hr class="hr_basket_content">
+                    </div>
+            
+                    <div class="price_text">
+                        <div class="price_text_child">
+                            <span>Zwischensumme:</span>
+                            <span align="right">9,00 &euro;</span>
+                        </div>
+                        <div class="price_text_child">
+                            <span>Lieferkosten:</span>
+                            <span align="right">5,00 &euro;</span>
+                        </div>
+                        <div class="price_text_child">
+                            <span>Gesamtsumme:</span>
+                            <span align="right">14,00 &euro;</span>
+                        </div>
+                        <div class="space_area_height_small"></div>
+                    </div>
+                    <button class="bestell_button_warenkorb">Bestellung absenden</button>
                 </div>
             </section>
         </div>
@@ -90,6 +120,6 @@
     <script src="./scripts/data.js"></script>
     <script src="./scripts/templates.js"></script>
     <script src="script.js"></script>
-    <script src="basket.js"></script>
+    <script src="./scripts/basket.js"></script>
 </body>
 </html>
