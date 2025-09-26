@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/standard.css">
     <link rel="stylesheet" href="./styles/assets.css">
     <link rel="stylesheet" href="./styles/basket.css">
+    <link rel="stylesheet" href="./styles/dialog.css">
     <link rel="stylesheet" href="./styles/mobile.css">
     <link rel="icon" href="./assets/icons/favicon.svg" type="image/png">
 
@@ -53,7 +54,7 @@
                             <p>Tofu in Nusspanade mit Koriander</p><br>
                             <p><b>9,00 &euro;</b></p>
                         </div>
-                        <img class="add-icon" src="./assets/icons/add-icon.png" alt="Hinzufügen-Button" aria-label="Gericht zum Warenbork hinzufügen">
+                        <img class="add_icon" src="./assets/icons/add-icon.png" alt="Hinzufügen-Button" aria-label="Gericht zum Warenbork hinzufügen">
                     </div>
                     <div class="dishes_card_content" id="dishesCardContent"></div>
                     <div class="dishes_card_content" id="dishesCardContent"></div>
@@ -106,10 +107,20 @@
                             <span align="right">14,00 &euro;</span>
                         </div>
                         <div class="space_area_height_small"></div>
+                        <div class="space_area_height_small"></div>
                     </div>
-                    <button class="bestell_button_warenkorb">Bestellung absenden</button>
+                    <button class="bestellbutton_warenkorb" onclick="openDialog()" aria-haspopup="dialog" aria-controls="orderDialog">Bestellung absenden</button>
                 </div>
             </section>
+
+            <dialog id="orderDialog" aria-labelledby="dialogTitle">
+                <img src="./assets/img/tofu-7249285.jpg" alt="Tofu-Gericht">
+                <img class="close-button" onclick="closeDialog()" src="./assets/icons/close-icon.png" alt="Schließen-Button" aria-label="Dialog schließen" height="34px">
+                <div class="dialog_text">
+                    <h1 id="dialogTitle">Vielen Dank.</h1>
+                    <p>Ihre Bestellung wird nun bearbeitet.</p>
+                </div>
+            </dialog>
         </div>
     </main>
 

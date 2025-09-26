@@ -29,12 +29,22 @@
     margin: 1.6rem 0;
 }
 
+/* Add product to basket */
+.add_icon {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    height: 42px;
+    width: 42px;
+    cursor: pointer; 
+}
+
 .white_aligned_icons {
     height: 18px;
     cursor: pointer;
 }
 
-.bestell_button_warenkorb {
+.bestellbutton_warenkorb {
     height: 50px;
     width: 100%;
     border: none;
@@ -45,12 +55,12 @@
     cursor: pointer;
 }
 
-/* Add product to basket */
-.add-icon {
-    position: absolute;
-    top: -7px;
-    right: -7px;
-    height: 42px;
-    width: 42px;
-    cursor: pointer; 
+.close-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
 }
