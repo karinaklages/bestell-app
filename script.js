@@ -36,6 +36,13 @@ function renderDishesContent() {
 }
 
 
+// function addDishToBasket() {
+    
+//     saveToLocalStorage()
+
+// }
+
+
 // Opens dialog with "Bestellung absenden"-Button
 function openDialog() {
     orderDialogRef.showModal();

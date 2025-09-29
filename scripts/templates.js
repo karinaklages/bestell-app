@@ -14,7 +14,7 @@ function getDishesCardContent(card) {
             <div>
                 <h3>${card.title}</h3>
                 <p>${card.description}</p><br>
-                <p><b>${card.price.toFixed(2)} &euro;</b></p>
+                <p><b>${card.price.toFixed(2).replace( '.', ',')} &euro;</b></p>
             </div>
             <img class="add_icon" src="./assets/icons/add-icon.png" alt="Gericht zum Warenkorb hinzufügen" onclick="addDishToBasket()" aria-label="Gericht zum Warenkorb hinzufügen">
         </div>
