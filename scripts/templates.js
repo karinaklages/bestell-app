@@ -16,7 +16,7 @@ function getDishesCardContent(card) {
                 <p>${card.description}</p><br>
                 <p><b>${card.price.toFixed(2)} &euro;</b></p>
             </div>
-            <img class="add_icon" src="./assets/icons/add-icon.png" alt="Gericht zum Warenkorb hinzufügen" aria-label="Gericht zum Warenkorb hinzufügen">
+            <img class="add_icon" src="./assets/icons/add-icon.png" alt="Gericht zum Warenkorb hinzufügen" onclick="addDishToBasket()" aria-label="Gericht zum Warenkorb hinzufügen">
         </div>
     `;
 }
