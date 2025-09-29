@@ -1,5 +1,5 @@
 .space_area_height {
-    height: 60px;
+    height: 70px;
     width: 100%;
     background-color: transparent;
 }
@@ -26,10 +26,10 @@
 .hr_basket_content {
     border: none;
     border-top: 2px solid #ffffff1a;
-    margin: 1.6rem 0;
+    margin: 2rem 0;
 }
 
-/* Add product to basket */
+/* Adds product to basket */
 .add_icon {
     position: absolute;
     top: -7px;
