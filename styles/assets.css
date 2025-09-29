@@ -10,26 +10,12 @@
     background-color: transparent; 
 }
 
-/* .space_area_width_small {
-    height: 100%;
-    width: 30px;
-    background-color: transparent;
-} */
-
-.hr_main_content {
-    border: none;
-    border-top: 2px solid #dadcdf;
-    margin: 2rem 0; 
-    margin-right: 30px;
-}
-
 .hr_basket_content {
     border: none;
     border-top: 2px solid #ffffff1a;
     margin: 2rem 0;
 }
 
-/* Adds product to basket */
 .add_icon {
     position: absolute;
     top: -7px;

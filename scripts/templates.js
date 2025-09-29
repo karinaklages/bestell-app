@@ -11,7 +11,7 @@ function getDishesCardContent(card) {
     return `
         <div class="dishes_card_content" tabindex="0">
             <img class="card_content_img" src="${card.img}" alt="${card.alt}">
-            <div>
+            <div class="card_text_box">
                 <h3>${card.title}</h3>
                 <p>${card.description}</p><br>
                 <p><b>${card.price.toFixed(2).replace( '.', ',')} &euro;</b></p>

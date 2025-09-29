@@ -9,7 +9,7 @@ let dishes = {
                 "alt": "Panierter Tofu in einer Schale"
             },
             {
-                "title": "Goldener Tofu in Erdnuss-Sauce",
+                "title": "Goldener Tofu",
                 "description": "Gebratener Tofu mit Erdnuss-Sauce und frischen Kräutern",
                 "price": 10.00,
                 "img": "./assets/img/tofu-7249284.jpg",
@@ -17,14 +17,14 @@ let dishes = {
             },
             {
                 "title": "Yuzu Udon Soup",
-                "description": "Udon-Nudeln in zitroniger Yuzu-Brühe mit Zuckerschoten und schwarzem Sesam",
+                "description": "Udon-Nudeln in zitroniger Yuzu-Brühe mit Zuckerschoten und Sesam",
                 "price": 12.00,
                 "img": "./assets/img/noodles-7187804.jpg",
                 "alt": "Udon Soup auf einem Tisch serviert"
             },
             {
                 "title": "Spicy Udon Soup",
-                "description": "Udon-Nudeln mit Zuckerschoten, Teriyaki-Chili-Brühe, Seitan und schwarzem Sesam",
+                "description": "Udon-Nudeln mit Zuckerschoten, Teriyaki-Chili-Brühe, Seitan und Sesam",
                 "price": 12.00,
                 "img": "./assets/img/noodles-7249233.jpg",
                 "alt": "Udon Soup auf einem Tisch serviert"
@@ -40,7 +40,7 @@ let dishes = {
             },
             {
                 "title": "Creamy Mie Nudeln",
-                "description": "Mie Nudeln mit Hühnchenfilet, Paprika, Erdnüssen, Koriander in cremiger Sauce",
+                "description": "Mie Nudeln mit Hühnchenfilet, Paprika, Erdnüssen und Koriander",
                 "price": 18.00,
                 "img": "./assets/img/noodles-7249226.jpg",
                 "alt": "Mie Nudeln in einer Schüssel serviert"
@@ -61,7 +61,7 @@ let dishes = {
             },
             {
                 "title": "Golden Curry Bowl",
-                "description": "Blumenkohl-Curry mit Basmatireis, Süßkartoffeln, Tofu, Kokosmilch und Koriander",
+                "description": "Blumenkohl-Curry mit Basmatireis, Süßkartoffeln, Tofu und Kokosmilch",
                 "price": 18.00,
                 "img": "./assets/img/curry-7249247.jpg",
                 "alt": "Curry-Gericht mit Blumenkohl in einer Schüssel"

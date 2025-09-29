@@ -37,9 +37,7 @@ function renderDishesContent() {
 
 
 // function addDishToBasket() {
-    
 //     saveToLocalStorage()
-
 // }
 
 

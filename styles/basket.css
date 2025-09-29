@@ -1,6 +1,7 @@
 .basket_wrapper {
     position: relative;
     width: 310px;
+    min-width: 310px;
 }
 
 .basket_content {

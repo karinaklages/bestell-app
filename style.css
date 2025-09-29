@@ -23,7 +23,7 @@ h1 {
     font-size: 38px;
     font-weight: 600;
     color: #b77b62;
-    padding-top: 32px;
+    padding-top: 56px;
     padding-bottom: 8px;
 }
 
@@ -62,8 +62,10 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1260px;
+    max-width: 1320px;
     height: 85px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -107,13 +109,13 @@ a:hover {
 .round_img {
     border-radius: 50%;
     object-fit: cover;
-    height: 120px;
-    width: 120px;
+    height: 90px;
+    width: 90px;
     border: 2px solid #b77b62;
     z-index: 1;
     position: absolute;
     left: 50%;
-    bottom: -56px;
+    bottom: -42px;
     transform: translateX(-50%);
 }
 
@@ -176,6 +178,10 @@ nav::after { bottom: 0; }
     height: 140px;
     object-fit: cover;
     margin-right: 30px;
+}
+
+.card_text_box {
+    padding-right: 30px;
 }
 
 footer {
