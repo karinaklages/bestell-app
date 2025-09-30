@@ -13,8 +13,8 @@ Photographers: Joanna Wielgosz / Jean-Louis Servais / Blandine Joannic / Firas H
 
 ###
 
-![Bestell App](./assets/img/bestell-app-1.png)<br>
+![Bestell App](./assets/img/bestell-app-1.jpg)<br>
 
-![Bestell App](./assets/img/bestell-app-2.png)<br>
+![Bestell App](./assets/img/bestell-app-2.jpg)<br>
 
-![Bestell App](./assets/img/bestell-app-3.png)
+![Bestell App](./assets/img/bestell-app-3.jpg)
