@@ -30,7 +30,18 @@
     cursor: pointer;
 }
 
-.bestellbutton_warenkorb {
+.order_button_basket {
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: #b77b62;
+    color: white;
+    font-family: 'Outfit';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.responsive_basket_button {
     height: 50px;
     width: 100%;
     border: none;

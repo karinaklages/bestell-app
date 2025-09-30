@@ -20,3 +20,17 @@ function getDishesCardContent(card) {
         </div>
     `;
 }
+
+
+// function getSideBasket() {
+//     return `
+
+//    `; 
+// }
+
+
+// function getBottomBasket() {
+//     return `
+
+//    `; 
+// }

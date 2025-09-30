@@ -27,6 +27,16 @@
     }
 }
 
+@media (max-width: 790px) {
+    .basket_wrapper {
+        display: none;
+    }
+
+    .responsive_basket {
+        display: block;
+    }
+}
+
 @media (max-width: 415px) {
     dialog {
         height: 350px;
