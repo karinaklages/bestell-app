@@ -1,8 +1,9 @@
-dialog:not([open]) {
+/* Order dialog */
+.order_dialog:not([open]) {
   display: none;
 }
 
-dialog {
+.order_dialog {
     display: flex;
     flex-direction: column;
     background-image: url("./assets/img/tofu-7249285.jpg") center/cover no-repeat;
@@ -19,18 +20,18 @@ dialog {
     overflow: hidden;
 }
 
-dialog::backdrop {
+.order_dialog::backdrop {
     /* background: #113e3c; */
     background: #2a5b59;
 }
 
-dialog h1 {
+.order_dialog h1 {
     color: #b77b62;
     font-size: 36px;
     font-weight: 400;
 }
 
-dialog p {
+.order_dialog p {
     color: #ffffff;
     font-weight: 300;
 }
@@ -43,3 +44,6 @@ dialog p {
     z-index: 1;
     color: white;
 }
+
+
+/* Bottom basket dialog */

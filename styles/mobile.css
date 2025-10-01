@@ -38,24 +38,24 @@
 }
 
 @media (max-width: 415px) {
-    dialog {
+    .order_dialog {
         height: 350px;
         width: 260px;
         object-fit: cover;
         overflow: hidden;
     }
 
-    dialog h1 {
+    .order_dialog h1 {
         font-size: 28px;
         font-weight: 400;
     }
 
-    dialog p {
+    .order_dialog p {
         color: #ffffff;
         font-weight: 200;
     }
 
-    dialog#orderDialog {
+    .order_dialog#orderDialog {
         height: 350px; 
         width: 260px;
         background-image: url("../assets/img/tofu-7249285.jpg");

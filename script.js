@@ -1,7 +1,8 @@
 // Variables
 
 // DOM Manipulation
-const orderDialogRef = document.getElementById ("orderDialog");
+const orderDialog = document.getElementById("orderDialog");
+const bottomBasketDialog = document.getElementById("bottomBasketDialog");
 
 // State
 index = 0;
@@ -41,14 +42,12 @@ function renderDishesContent() {
 // }
 
 
-// Opens dialog with "Bestellung absenden"-Button
-function openDialog() {
-    orderDialogRef.showModal();
+function openDialog(dialogRef) {
+    dialogRef.showModal();
     document.body.style.overflow = "hidden"; // Hides the scrollbar
 }
 
-
-function closeDialog() {
-    orderDialogRef.close();
+function closeDialog(dialogRef) {
+    dialogRef.close();
     document.body.style.overflow = "";
 }
