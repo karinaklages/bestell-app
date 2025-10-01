@@ -12,6 +12,7 @@
     top: 0;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
+    overflow: auto;
 }
 
 .product_info_aligned {
@@ -42,4 +43,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.bottom_basket_dialog {
+    position: relative;
+    width: 310px;
+    min-width: 310px;
+    height: 100vh;
+    margin: auto;
+}
+
+.basket_bottom_content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2a5b59;
+    width: 100%;
+    /* height: 100vh; */
+    padding: 30px;
+    overflow: auto;
+}
+
+.close_responsive_basket {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16px;
 }

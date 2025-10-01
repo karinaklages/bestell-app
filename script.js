@@ -45,6 +45,8 @@ function renderDishesContent() {
 function openDialog(dialogRef) {
     dialogRef.showModal();
     document.body.style.overflow = "hidden"; // Hides the scrollbar
+
+    dialogRef.focus();
 }
 
 function closeDialog(dialogRef) {

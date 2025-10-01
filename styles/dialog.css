@@ -1,4 +1,10 @@
-/* Order dialog */
+dialog {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: #2a5b59;
+}
+
 .order_dialog:not([open]) {
   display: none;
 }
@@ -21,7 +27,6 @@
 }
 
 .order_dialog::backdrop {
-    /* background: #113e3c; */
     background: #2a5b59;
 }
 
@@ -45,5 +50,6 @@
     color: white;
 }
 
-
-/* Bottom basket dialog */
+.bottom_basket_dialog::backdrop {
+    background: #2a5b59;
+}
