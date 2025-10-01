@@ -5,19 +5,22 @@ const orderDialog = document.getElementById("orderDialog");
 const bottomBasketDialog = document.getElementById("bottomBasketDialog");
 
 // State
+let basketDishes = JSON.parse(localStorage.getItem("basket")) || [];
 index = 0;
 
 
 // Functions
 
 function init() {
-    // getFromLocalStorage()
+    getFromLocalStorage()
     renderDishesContent();
+    renderBasket()
     renderSideBasket();
     renderBottomBasket();
 }
 
 
+// Renders main content
 function renderDishesContent() {
     const dishesContentRef = document.getElementById("dishesContent");
     dishesContentRef.innerHTML = "";
@@ -39,9 +42,52 @@ function renderDishesContent() {
 }
 
 
-// function addDishToBasket() {
-//     saveToLocalStorage()
-// }
+// Adds dishes to basket array
+function addDishToBasket(title, price) {
+    basketDishes.push({
+        title: title,
+        price: parseFloat(price),
+        amount: 1
+    });
+
+    saveToLocalStorage();
+    renderBasket();
+}
+
+
+// Renders and shows basket content
+function renderBasket() {
+    const sideContainer = document.getElementById("sideBasketContainer");
+    const bottomContainer = document.getElementById("bottomBasketContainer");
+    if (!sideContainer || !bottomContainer) return; // Otherwise properties of null
+
+    sideContainer.innerHTML = "";
+    bottomContainer.innerHTML = "";
+
+    for (let i = 0; i < basketDishes.length; i++) {
+        const item = basketDishes[i];
+        sideContainer.innerHTML += getSideBasketProducts(item);
+        bottomContainer.innerHTML += getBottomBasketProducts(item);
+    }
+}
+
+
+// Stringify saves object data to strings
+function saveToLocalStorage() {
+  localStorage.setItem("basket", JSON.stringify(basketDishes));
+}
+
+
+// Parse saves array data to an object
+function getFromLocalStorage() {
+    let basketArray = JSON.parse(localStorage.getItem("basket"));
+
+    if (basketArray != null) {
+        basketDishes = basketArray;
+
+        renderBasket();
+    }
+}
 
 
 // Renders side basket
@@ -60,6 +106,7 @@ function renderBottomBasket() {
 }
 
 
+// Opens all dialogs
 function openDialog(dialogRef) {
     dialogRef.showModal();
     document.body.style.overflow = "hidden"; // Hides the scrollbar
@@ -68,6 +115,7 @@ function openDialog(dialogRef) {
 }
 
 
+// Closes all dialogs
 function closeDialog(dialogRef) {
     dialogRef.close();
     document.body.style.overflow = "auto";
