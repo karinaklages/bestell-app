@@ -37,6 +37,56 @@
     }
 }
 
+@media (max-width: 440px) {
+    .logo {
+        height: 56px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p, li, a {
+        font-size: 14px;
+        color: #113e3c;
+    }
+
+    .nav ul {
+        gap: 1.5rem;
+    } 
+
+    .dishes_card_content h3 {
+        font-size: 18px;
+    }
+
+    .dishes_card_content p {
+        font-size: 14px;
+    }
+
+    .dishes_card_content {
+        height: 180px;
+    }
+
+    .card_content_img {
+        width: 80px;
+        height: 180px; 
+        object-fit: cover;
+        margin-right: 12px;
+    }
+}
+
 @media (max-width: 415px) {
     .order_dialog {
         height: 350px;
