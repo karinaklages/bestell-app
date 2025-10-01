@@ -12,7 +12,9 @@ index = 0;
 
 function init() {
     // getFromLocalStorage()
-    renderDishesContent()
+    renderDishesContent();
+    renderSideBasket();
+    renderBottomBasket();
 }
 
 
@@ -42,6 +44,22 @@ function renderDishesContent() {
 // }
 
 
+// Renders side basket
+function renderSideBasket() {
+    let placeSideBasket = document.getElementById("sideBasket")
+    placeSideBasket.innerHTML = "";
+    placeSideBasket.innerHTML = getSideBasket();
+}
+
+
+// Renders bottom basket
+function renderBottomBasket() {
+    let placeBottomBasket = document.getElementById("bottomBasketDialog")
+    placeBottomBasket.innerHTML = "";
+    placeBottomBasket.innerHTML = getBottomBasket();
+}
+
+
 function openDialog(dialogRef) {
     dialogRef.showModal();
     document.body.style.overflow = "hidden"; // Hides the scrollbar
@@ -49,7 +67,8 @@ function openDialog(dialogRef) {
     dialogRef.focus();
 }
 
+
 function closeDialog(dialogRef) {
     dialogRef.close();
-    document.body.style.overflow = "";
+    document.body.style.overflow = "auto";
 }
