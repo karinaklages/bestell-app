@@ -56,19 +56,19 @@ function getSideBasket() {
 
 
 // Template for new array data in side basket
-function getSideBasketProducts(item) {
+function getSideBasketProducts(item, index) {
     return `
         <div class="product_info">
             <h4>${item.title}</h4>
             <div class="product_info_aligned">
                 <div class="product_info_aligned_child">
-                    <img class="white_aligned_icons" src="./assets/icons/minus-icon.png" alt="Minus Icon" aria-label="Produkt subtrahieren">
+                    <img class="white_aligned_icons" src="./assets/icons/minus-icon.png" alt="Minus Icon" aria-label="Produkt subtrahieren" onclick="decreaseAmount(${index})">
                     <p>${item.amount} x</p>
-                    <img class="white_aligned_icons" src="./assets/icons/plus-icon.png" alt="Plus Icon" aria-label="Produkt addieren">
+                    <img class="white_aligned_icons" src="./assets/icons/plus-icon.png" alt="Plus Icon" aria-label="Produkt addieren" onclick="increaseAmount(${index})">
                 </div>
                 <div class="product_info_aligned_child">
                     <p align="right">${item.price.toFixed(2).replace( '.', ',')} €</p>
-                    <img class="white_aligned_icons" src="./assets/icons/close-icon.png" alt="Close Icon" aria-label="Produkt löschen">
+                    <img class="white_aligned_icons" src="./assets/icons/close-icon.png" alt="Close Icon" aria-label="Produkt löschen" onclick="deleteBasketProduct(${index})">
                 </div>
             </div>
             <hr class="hr_basket_content">
@@ -111,19 +111,19 @@ function getBottomBasket() {
 }
 
 
-function getBottomBasketProducts(item) {
+function getBottomBasketProducts(item, index) {
     return `
         <div class="product_info">
             <h4>${item.title}</h4>
             <div class="product_info_aligned">
                 <div class="product_info_aligned_child">
-                    <img class="white_aligned_icons" src="./assets/icons/minus-icon.png" alt="Minus Icon" aria-label="Produkt subtrahieren">
+                    <img class="white_aligned_icons" src="./assets/icons/minus-icon.png" alt="Minus Icon" aria-label="Produkt subtrahieren" onclick="decreaseAmount(${index})">
                     <p>${item.amount} x</p>
-                    <img class="white_aligned_icons" src="./assets/icons/plus-icon.png" alt="Plus Icon" aria-label="Produkt addieren">
+                    <img class="white_aligned_icons" src="./assets/icons/plus-icon.png" alt="Plus Icon" aria-label="Produkt addieren" onclick="increaseAmount(${index})">
                 </div>
                 <div class="product_info_aligned_child">
                     <p align="right">${item.price.toFixed(2).replace( '.', ',')} €</p>
-                    <img class="white_aligned_icons" src="./assets/icons/close-icon.png" alt="Close Icon" aria-label="Produkt löschen">
+                    <img class="white_aligned_icons" src="./assets/icons/close-icon.png" alt="Close Icon" aria-label="Produkt löschen" onclick="deleteBasketProduct(${index})">
                 </div>
             </div>
             <hr class="hr_basket_content">

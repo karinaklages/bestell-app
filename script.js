@@ -42,16 +42,19 @@ function renderDishesContent() {
 }
 
 
-// Adds dishes to basket array
-function addDishToBasket(title, price) {
-    basketDishes.push({
-        title: title,
-        price: parseFloat(price),
-        amount: 1
-    });
+// Renders side basket
+function renderSideBasket() {
+    let placeSideBasket = document.getElementById("sideBasket")
+    placeSideBasket.innerHTML = "";
+    placeSideBasket.innerHTML = getSideBasket();
+}
 
-    saveToLocalStorage();
-    renderBasket();
+
+// Renders bottom basket
+function renderBottomBasket() {
+    let placeBottomBasket = document.getElementById("bottomBasketDialog")
+    placeBottomBasket.innerHTML = "";
+    placeBottomBasket.innerHTML = getBottomBasket();
 }
 
 
@@ -66,9 +69,59 @@ function renderBasket() {
 
     for (let i = 0; i < basketDishes.length; i++) {
         const item = basketDishes[i];
-        sideContainer.innerHTML += getSideBasketProducts(item);
-        bottomContainer.innerHTML += getBottomBasketProducts(item);
+        sideContainer.innerHTML += getSideBasketProducts(item, i);
+        bottomContainer.innerHTML += getBottomBasketProducts(item, i);
     }
+}
+
+
+// Adds dishes to basket array
+function addDishToBasket(title, price) {
+    let productIndex = basketDishes.findIndex(item => item.title === title);
+
+    if (productIndex > -1) { // -1: no item found; > -1: item found
+        basketDishes[productIndex].amount += 1;
+    } else {
+        basketDishes.push({
+            title: title,
+            price: parseFloat(price),
+            amount: 1
+        });
+    }
+
+    saveToLocalStorage();
+    renderBasket();
+}
+
+
+// Basket item plus 1 via onclick
+function increaseAmount(index) {
+    basketDishes[index].amount += 1;
+
+    saveToLocalStorage();
+    renderBasket();
+}
+
+
+// Basket item minus 1 via onclick
+function decreaseAmount(index) {
+    if (basketDishes[index].amount > 1) {
+        basketDishes[index].amount -= 1;
+    } else {
+        basketDishes.splice(index, 1);
+    }
+
+    saveToLocalStorage();
+    renderBasket();
+}
+
+
+// Delets item from array via onclick
+function deleteBasketProduct(index) {
+    basketDishes.splice(index, 1);
+
+    saveToLocalStorage();
+    renderBasket()
 }
 
 
@@ -87,22 +140,6 @@ function getFromLocalStorage() {
 
         renderBasket();
     }
-}
-
-
-// Renders side basket
-function renderSideBasket() {
-    let placeSideBasket = document.getElementById("sideBasket")
-    placeSideBasket.innerHTML = "";
-    placeSideBasket.innerHTML = getSideBasket();
-}
-
-
-// Renders bottom basket
-function renderBottomBasket() {
-    let placeBottomBasket = document.getElementById("bottomBasketDialog")
-    placeBottomBasket.innerHTML = "";
-    placeBottomBasket.innerHTML = getBottomBasket();
 }
 
 
