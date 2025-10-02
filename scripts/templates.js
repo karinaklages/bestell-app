@@ -36,7 +36,7 @@ function getSideBasket() {
             <div class="price_text">
                 <div class="price_text_child">
                     <span>Zwischensumme:</span>
-                    <span align="right">9,00 €</span>
+                    <span id="subtotalPriceSideBasket" align="right">9,00 €</span>
                 </div>
                 <div class="price_text_child">
                     <span>Lieferkosten:</span>
@@ -44,12 +44,12 @@ function getSideBasket() {
                 </div>
                 <div class="price_text_child">
                     <span>Gesamtsumme:</span>
-                    <span align="right">14,00 €</span>
+                    <span id="totalPriceSideBasket" align="right">14,00 €</span>
                 </div>
                 <div class="space_area_height_small"></div>
                 <div class="space_area_height_small"></div>
             </div>
-            <button class="order_button_basket" onclick="openDialog(orderDialog)" aria-haspopup="dialog" aria-controls="orderDialog">Bestellung absenden</button>
+            <button class="order_button_basket" onclick="openDialog(orderDialog); clearBasket()" aria-haspopup="dialog" aria-controls="orderDialog">Bestellung absenden</button>
         </div>
     `;
 }
@@ -89,7 +89,7 @@ function getBottomBasket() {
             <div class="price_text">
                 <div class="price_text_child">
                     <span>Zwischensumme:</span>
-                    <span align="right">9,00 €</span>
+                    <span id="subtotalPriceBottomBasket" align="right">9,00 €</span>
                 </div>
                 <div class="price_text_child">
                     <span>Lieferkosten:</span>
@@ -97,12 +97,12 @@ function getBottomBasket() {
                 </div>
                 <div class="price_text_child">
                     <span>Gesamtsumme:</span>
-                    <span align="right">14,00 €</span>
+                    <span  id="totalPriceBottomBasket" align="right">14,00 €</span>
                 </div>
                 <div class="space_area_height_small"></div>
                 <div class="space_area_height_small"></div>
             </div>
-            <button class="order_button_basket" onclick="openDialog(orderDialog)" aria-haspopup="dialog" aria-controls="orderDialog">Bestellung absenden</button>
+            <button class="order_button_basket" onclick="openDialog(orderDialog); clearBasket()" aria-haspopup="dialog" aria-controls="orderDialog">Bestellung absenden</button>
             <div class="close_responsive_basket">
                 <img class="white_aligned_icons" src="./assets/icons/close-icon.png" onclick="closeDialog(bottomBasketDialog)" alt="Close Icon" aria-label="Warenkorb schließen">
             </div>

@@ -125,6 +125,19 @@ function deleteBasketProduct(index) {
 }
 
 
+// Clears all basket array data via onclick "Bestellung absenden"
+function clearBasket() {
+    basketDishes = [];
+    saveToLocalStorage();
+    renderBasket();
+
+    document.getElementById("subtotalPriceSideBasket").textContent = "0,00 €";
+    document.getElementById("totalPriceSideBasket").textContent = "0,00 €";
+    document.getElementById("subtotalPriceBottomBasket").textContent = "0,00 €";
+    document.getElementById("totalPriceBottomBasket").textContent = "0,00 €";
+}
+
+
 // Stringify saves object data to strings
 function saveToLocalStorage() {
   localStorage.setItem("basket", JSON.stringify(basketDishes));
