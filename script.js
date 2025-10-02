@@ -72,6 +72,8 @@ function renderBasket() {
         sideContainer.innerHTML += getSideBasketProducts(item, i);
         bottomContainer.innerHTML += getBottomBasketProducts(item, i);
     }
+
+    updatePrice();
 }
 
 
@@ -125,6 +127,23 @@ function deleteBasketProduct(index) {
 }
 
 
+// Calculates prices
+function updatePrice() {
+    let subtotal = 0;
+        for (let k = 0; k < basketDishes.length; k++) {
+            subtotal += basketDishes[k].price * basketDishes[k].amount;
+        }
+
+    let total = subtotal + 5;
+
+    document.getElementsByClassName("alignedPriceSideBasket").textContent = subtotal.toFixed(2).replace('.', ',') + " €";
+    document.getElementById("subtotalPriceSideBasket").textContent = subtotal.toFixed(2).replace('.', ',') + " €";
+    document.getElementById("totalPriceSideBasket").textContent = total.toFixed(2).replace('.', ',') + " €";
+    document.getElementById("subtotalPriceBottomBasket").textContent = subtotal.toFixed(2).replace('.', ',') + " €";
+    document.getElementById("totalPriceBottomBasket").textContent = total.toFixed(2).replace('.', ',') + " €";
+}
+
+
 // Clears all basket array data via onclick "Bestellung absenden"
 function clearBasket() {
     basketDishes = [];
@@ -134,7 +153,7 @@ function clearBasket() {
     document.getElementById("subtotalPriceSideBasket").textContent = "0,00 €";
     document.getElementById("totalPriceSideBasket").textContent = "0,00 €";
     document.getElementById("subtotalPriceBottomBasket").textContent = "0,00 €";
-    document.getElementById("totalPriceBottomBasket").textContent = "0,00 €";
+    document.getElementById("totalPriceSideBasket").textContent = "0,00 €";
 }
 
 

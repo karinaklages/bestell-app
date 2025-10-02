@@ -36,7 +36,7 @@ function getSideBasket() {
             <div class="price_text">
                 <div class="price_text_child">
                     <span>Zwischensumme:</span>
-                    <span id="subtotalPriceSideBasket" align="right">9,00 €</span>
+                    <span id="subtotalPriceSideBasket" align="right">0,00 €</span>
                 </div>
                 <div class="price_text_child">
                     <span>Lieferkosten:</span>
@@ -44,7 +44,7 @@ function getSideBasket() {
                 </div>
                 <div class="price_text_child">
                     <span>Gesamtsumme:</span>
-                    <span id="totalPriceSideBasket" align="right">14,00 €</span>
+                    <span id="totalPriceSideBasket" align="right">0,00 €</span>
                 </div>
                 <div class="space_area_height_small"></div>
                 <div class="space_area_height_small"></div>
@@ -67,7 +67,7 @@ function getSideBasketProducts(item, index) {
                     <img class="white_aligned_icons" src="./assets/icons/plus-icon.png" alt="Plus Icon" aria-label="Produkt addieren" onclick="increaseAmount(${index})">
                 </div>
                 <div class="product_info_aligned_child">
-                    <p align="right">${item.price.toFixed(2).replace( '.', ',')} €</p>
+                    <p align="right">${(item.price * item.amount).toFixed(2).replace( '.', ',')} €</p>
                     <img class="white_aligned_icons" src="./assets/icons/close-icon.png" alt="Close Icon" aria-label="Produkt löschen" onclick="deleteBasketProduct(${index})">
                 </div>
             </div>
@@ -89,7 +89,7 @@ function getBottomBasket() {
             <div class="price_text">
                 <div class="price_text_child">
                     <span>Zwischensumme:</span>
-                    <span id="subtotalPriceBottomBasket" align="right">9,00 €</span>
+                    <span id="subtotalPriceBottomBasket" align="right">0,00 €</span>
                 </div>
                 <div class="price_text_child">
                     <span>Lieferkosten:</span>
@@ -97,7 +97,7 @@ function getBottomBasket() {
                 </div>
                 <div class="price_text_child">
                     <span>Gesamtsumme:</span>
-                    <span  id="totalPriceBottomBasket" align="right">14,00 €</span>
+                    <span  id="totalPriceBottomBasket" align="right">0,00 €</span>
                 </div>
                 <div class="space_area_height_small"></div>
                 <div class="space_area_height_small"></div>
@@ -111,6 +111,7 @@ function getBottomBasket() {
 }
 
 
+// Template for new array data in bottom basket
 function getBottomBasketProducts(item, index) {
     return `
         <div class="product_info">
@@ -122,7 +123,7 @@ function getBottomBasketProducts(item, index) {
                     <img class="white_aligned_icons" src="./assets/icons/plus-icon.png" alt="Plus Icon" aria-label="Produkt addieren" onclick="increaseAmount(${index})">
                 </div>
                 <div class="product_info_aligned_child">
-                    <p align="right">${item.price.toFixed(2).replace( '.', ',')} €</p>
+                    <p align="right">${(item.price * item.amount).toFixed(2).replace( '.', ',')} €</p>
                     <img class="white_aligned_icons" src="./assets/icons/close-icon.png" alt="Close Icon" aria-label="Produkt löschen" onclick="deleteBasketProduct(${index})">
                 </div>
             </div>
