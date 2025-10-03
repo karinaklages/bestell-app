@@ -6,7 +6,7 @@ dialog {
 }
 
 .order_dialog:not([open]) {
-  display: none;
+    display: none;
 }
 
 .order_dialog {
