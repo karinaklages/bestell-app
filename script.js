@@ -12,9 +12,9 @@ index = 0;
 // Functions
 
 function init() {
-    getFromLocalStorage()
+    getFromLocalStorage();
     renderDishesContent();
-    renderBasket()
+    renderBasket();
     renderSideBasket();
     renderBottomBasket();
 }
@@ -28,12 +28,12 @@ function renderDishesContent() {
     // Renders category names using Object.keys() to return an array
     for (let indexCategory = 0; indexCategory < Object.keys(dishes.dishes).length; indexCategory++) {
         const categoryName = Object.keys(dishes.dishes)[indexCategory];
-        dishesContentRef.innerHTML += getDishesContent(categoryName);
+        const categoryId = textConversion(categoryName);
 
-        const dishesCardContentRef = document.getElementsByClassName("cardWrapper");
-        const currentCardWrapper = dishesCardContentRef[dishesCardContentRef.length - 1];
+        dishesContentRef.innerHTML += getDishesContent(categoryName, categoryId);
+        const currentCardWrapper = document.querySelector(`#${categoryId} .cardWrapper`);
 
-        // Renders cards
+        // Renders dishes cards
         for (let cardIndex = 0; cardIndex < dishes.dishes[categoryName].length; cardIndex++) {
             const card = dishes.dishes[categoryName][cardIndex];
             currentCardWrapper.innerHTML += getDishesCardContent(card);
@@ -42,9 +42,21 @@ function renderDishesContent() {
 }
 
 
+// Converts navigation category text
+function textConversion(text) {
+    return text
+        .toString()
+        .toLowerCase()
+        .replace(/ü/g, "ue")
+        .replace(/ß/g, "ss")
+        .replace(/\s+/g, "-")
+        .replace(/[^\w-]+/g, "");
+}
+
+
 // Renders side basket
 function renderSideBasket() {
-    let placeSideBasket = document.getElementById("sideBasket")
+    let placeSideBasket = document.getElementById("sideBasket");
     placeSideBasket.innerHTML = "";
     placeSideBasket.innerHTML = getSideBasket();
 }
@@ -52,7 +64,7 @@ function renderSideBasket() {
 
 // Renders bottom basket
 function renderBottomBasket() {
-    let placeBottomBasket = document.getElementById("bottomBasketDialog")
+    let placeBottomBasket = document.getElementById("bottomBasketDialog");
     placeBottomBasket.innerHTML = "";
     placeBottomBasket.innerHTML = getBottomBasket();
 }
@@ -96,7 +108,7 @@ function addDishToBasket(title, price) {
 }
 
 
-// Basket item plus 1 via onclick
+// Basket item +1 via onclick
 function increaseAmount(index) {
     basketDishes[index].amount += 1;
 
@@ -105,7 +117,7 @@ function increaseAmount(index) {
 }
 
 
-// Basket item minus 1 via onclick
+// Basket item -1 via onclick
 function decreaseAmount(index) {
     if (basketDishes[index].amount > 1) {
         basketDishes[index].amount -= 1;
@@ -123,7 +135,7 @@ function deleteBasketProduct(index) {
     basketDishes.splice(index, 1);
 
     saveToLocalStorage();
-    renderBasket()
+    renderBasket();
 }
 
 

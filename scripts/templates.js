@@ -1,9 +1,11 @@
 // Template for category names in main content
-function getDishesContent(categoryName) {
+function getDishesContent(categoryName, categoryId) {
     return `
-        <h2>${categoryName}</h2>
-        <div class="cardWrapper"></div>
-        <div class="space_area_height"></div>
+        <section id="${categoryId}">
+            <h2>${categoryName}</h2>
+            <div class="cardWrapper"></div>
+            <div class="space_area_height"></div>
+        </section>
     `;
 }
 
