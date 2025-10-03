@@ -49,7 +49,3 @@ dialog {
     z-index: 1;
     color: white;
 }
-
-.bottom_basket_dialog::backdrop {
-    background: #2a5b59;
-}

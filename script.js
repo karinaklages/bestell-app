@@ -58,7 +58,7 @@ function renderBottomBasket() {
 }
 
 
-// Renders and shows basket content
+// Renders basket content
 function renderBasket() {
     const sideContainer = document.getElementById("sideBasketContainer");
     const bottomContainer = document.getElementById("bottomBasketContainer");
@@ -118,7 +118,7 @@ function decreaseAmount(index) {
 }
 
 
-// Delets item from array via onclick
+// Deletes item from array via onclick
 function deleteBasketProduct(index) {
     basketDishes.splice(index, 1);
 
@@ -144,7 +144,7 @@ function updatePrice() {
 }
 
 
-// Clears all basket array data via onclick "Bestellung absenden"
+// Clears basket array data via onclick "Bestellung absenden"
 function clearBasket() {
     basketDishes = [];
     saveToLocalStorage();
@@ -172,6 +172,20 @@ function getFromLocalStorage() {
 
         renderBasket();
     }
+}
+
+
+// Toggles basket via basket icon
+function toggleBasket() {
+  const bottomBasket = window.innerWidth < 790;
+
+  if (bottomBasket) {
+    openDialog(bottomBasketDialog);
+  }
+
+  else {
+    document.getElementById("sideBasket").classList.toggle("d_none");
+  }
 }
 
 

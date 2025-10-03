@@ -53,6 +53,10 @@
     margin: auto;
 }
 
+.bottom_basket_dialog::backdrop {
+    background: #2a5b59;
+}
+
 .basket_bottom_content {
     position: absolute;
     top: 0;
@@ -69,4 +73,8 @@
     display: flex;
     justify-content: flex-end;
     padding-top: 16px;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
