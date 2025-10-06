@@ -17,6 +17,7 @@ function init() {
     renderBasket();
     renderSideBasket();
     renderBottomBasket();
+    updatePrice();
 }
 
 
