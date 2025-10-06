@@ -101,7 +101,7 @@ a:hover {
     display: block;
 }
 
-.round_img {
+/* .round_img {
     border-radius: 50%;
     object-fit: cover;
     height: 90px;
@@ -112,7 +112,7 @@ a:hover {
     left: 50%;
     bottom: -42px;
     transform: translateX(-50%);
-}
+} */
 
 .content_restaurant_titlebox, nav, #dishesContent {
     padding-left: 30px;
