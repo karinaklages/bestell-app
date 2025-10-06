@@ -6,7 +6,7 @@ const bottomBasketDialog = document.getElementById("bottomBasketDialog");
 
 // State
 let basketDishes = JSON.parse(localStorage.getItem("basket")) || [];
-index = 0;
+let index = 0;
 
 
 // Functions
@@ -146,9 +146,12 @@ function updatePrice() {
             subtotal += basketDishes[k].price * basketDishes[k].amount;
         }
 
-    let total = subtotal + 5;
+    let total = 0;
 
-    document.getElementsByClassName("alignedPriceSideBasket").textContent = subtotal.toFixed(2).replace('.', ',') + " €";
+    if (basketDishes.length > 0) {
+        total = subtotal + 5;
+    }
+
     document.getElementById("subtotalPriceSideBasket").textContent = subtotal.toFixed(2).replace('.', ',') + " €";
     document.getElementById("totalPriceSideBasket").textContent = total.toFixed(2).replace('.', ',') + " €";
     document.getElementById("subtotalPriceBottomBasket").textContent = subtotal.toFixed(2).replace('.', ',') + " €";
@@ -165,7 +168,7 @@ function clearBasket() {
     document.getElementById("subtotalPriceSideBasket").textContent = "0,00 €";
     document.getElementById("totalPriceSideBasket").textContent = "0,00 €";
     document.getElementById("subtotalPriceBottomBasket").textContent = "0,00 €";
-    document.getElementById("totalPriceSideBasket").textContent = "0,00 €";
+    document.getElementById("totalPriceBottomBasket").textContent = "0,00 €";
 }
 
 
