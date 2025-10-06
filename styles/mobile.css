@@ -58,10 +58,19 @@
 }
 
 @media (max-width: 440px) {
+    .logo_container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .logo {
         height: 56px;
     }
 
+    .content_restaurant_titlebox {
+        padding-left: 16px;
+    }
+            
     .content_restaurant_titlebox h1 {
         font-size: 32px;
     }
@@ -82,6 +91,20 @@
         color: #113e3c;
     }
 
+    .content_restaurant_titlebox, nav, #dishesContent {
+        padding-left: 16px;
+    }
+
+    nav {
+        margin-right: 16px;
+    }
+
+    nav::before,
+    nav::after {
+        left: 16px;
+        right: 0;
+    }
+
     .nav ul {
         gap: 1.5rem;
     } 
@@ -96,6 +119,7 @@
 
     .dishes_card_content {
         height: 180px;
+        margin-right: 16px;
     }
 
     .card_content_img {
@@ -103,6 +127,11 @@
         height: 180px; 
         object-fit: cover;
         margin-right: 12px;
+    }
+
+    .responsive_basket {
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
 
