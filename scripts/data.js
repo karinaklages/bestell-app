@@ -1,4 +1,4 @@
-let dishes = {
+const dishes = {
     "dishes": {
         "Mini Gerichte": [
             {
